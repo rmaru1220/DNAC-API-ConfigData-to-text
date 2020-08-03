@@ -1,11 +1,11 @@
-# Test and Notification automation on-box
+# Get device config from DNAC API
 
-Problem: When SIer changes the running-config such as ACL/Vlan/Routing, the reachability test must be done and reported with documentation. The task is always taking time and cost.
+Problem: It's time-consuming and costly for engineers to retrieve configurations from numerous devices, as well as to log in every time..
 
-Solution: Use On-box Python to test, documentation, and sending the output to alias or SNS. The python script can be initiated by EEM events such as syslog (Syslog ED), timer (Timer ED), or routing change (Routing ED).
+Solution: CiscoDNACenter's APIs (command runner and get configuration) are used to automatically retrieve information about the device. The command runner allows you to define any command in a script. For configuration retrieval, the output information is converted to a text file.
 
-# How the script works
-![How the script works](./image1.png)
+# How the script works（Command runner）
+![How the script works（Command runner）](./image1.png)
 
-# Configuration
-![Configuration](./image2.png)
+# How the script works（Get configration）
+![How the script works（Get configration）](./image2.png)
